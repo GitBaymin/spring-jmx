@@ -1,0 +1,45 @@
+info:
+  version: @project.version@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: Admin-Server
+    index: 1
+  boot:
+    admin:
+      url: http://localhost:${server.port}
+  redis:
+      host: localhost
+      port: 6379
+      password:
+      pool:
+        max-active: 10
+        max-wait: 1000
+endpoints:
+  health:
+    sensitive: false
+
+# datasource:
+#    url: jdbc:oracle:thin:@192.168.233.241:1521:orcl
+#    username: spdb
+#    password: cmiot
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.index}:${random.value}
+    prefer-ip-address: true
+    hostname: admin-sever-${spring.application.index}
+    status-page-url-path: ${management.context-path}/info
+    health-check-url-path: ${management.context-path}/health
+    metadata-map:
+      management:
+        context-path: ${management.context-path}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  security:
+    enabled: false
+  context-path: /manage

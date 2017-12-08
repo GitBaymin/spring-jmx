@@ -1,0 +1,8 @@
+<!--
+  ~ Copyright (c) 2017, China Mobile IOT All Rights Reserved.
+  -->
+
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <jmxConfigurator/>
+</configuration>

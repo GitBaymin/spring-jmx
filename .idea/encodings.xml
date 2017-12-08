@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/../admin-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../admin-server-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jmx-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jmx-client-2" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
