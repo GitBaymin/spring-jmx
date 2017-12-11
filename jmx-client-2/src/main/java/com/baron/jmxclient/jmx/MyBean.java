@@ -32,7 +32,7 @@ import javax.validation.constraints.NotNull;
  * @modify 2017年11月22日
  * @since v
  */
-@ManagedResource(objectName = "bean:name=MyBean", description = "My Managed Bean", log = true, logFile = "jmx.log",
+@ManagedResource(objectName = "bean:name=MyBean", description = "My Managed Bean", log = true, logFile = "jmx-client-2.log",
     currencyTimeLimit = 15, persistPolicy = "OnUpdate", persistPeriod = 200, persistLocation = "foo",
     persistName = "bar")
 public class MyBean {

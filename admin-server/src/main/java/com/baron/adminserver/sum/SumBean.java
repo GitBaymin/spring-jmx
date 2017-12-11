@@ -18,7 +18,7 @@ import org.springframework.jmx.export.annotation.ManagedResource;
  * @modify 2017年12月08日
  * @since v
  */
-@ManagedResource(objectName = "bean:name=sumBean",description = "两个服务参数的和")
+@ManagedResource(objectName = "bean:name=sumBean",description = "两个服务参数的和", log = true, logFile = "admin-server.log")
 public class SumBean {
 
     @Autowired
