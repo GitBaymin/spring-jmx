@@ -1,7 +1,0 @@
-<component name="CopyrightManager">
-  <settings default="iot-copyright">
-    <module2copyright>
-      <element module="All" copyright="iot-copyright" />
-    </module2copyright>
-  </settings>
-</component>
