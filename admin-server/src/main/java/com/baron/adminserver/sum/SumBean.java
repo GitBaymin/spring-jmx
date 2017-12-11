@@ -33,13 +33,17 @@ public class SumBean {
 
     @ManagedAttribute(description = "两个服务maxPostSize的和")
     public int getSumMaxPostSize() {
+        // 取出jmx-client保存的maxPostSize值
         int maxPostSize = Integer.parseInt(valueOperations.get("maxPostSize"));
+        // 取出jmx-client-2保存的maxPostSize2值
         int maxPostSize2 = Integer.parseInt(valueOperations.get("maxPostSize2"));
         return maxPostSize + maxPostSize2;
     }
     @ManagedAttribute(description = "两个服务maxThreads的和")
     public int getSumMaxThreads(){
+        // 取出jmx-client保存的maxThreads值
         int maxThreads = Integer.parseInt(valueOperations.get("maxThreads"));
+        // 取出jmx-client-2保存的maxThreads2值
         int maxThreads2 = Integer.parseInt(valueOperations.get("maxThreads2"));
         return maxThreads + maxThreads2;
     }

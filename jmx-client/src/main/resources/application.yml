@@ -15,16 +15,9 @@ spring:
     pool:
       max-active: 10
       max-wait: 1000
-#  datasource:
-#    url: jdbc:oracle:thin:@192.168.233.241:1521:orcl
-#    username: spdb
-#    password: cmiot
-#  jmx:
-#    default-domain: com.baron.actuator.jmx
-#    enabled: true
 server:
   port: 8081
-
+# 注册到注册中心
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.index}:${random.value}
